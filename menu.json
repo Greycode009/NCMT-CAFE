@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Masala Chiya",
+    "category": "Beverage",
+    "price": 50,
+    "image": "https://images.pexels.com/photos/12865880/pexels-photo-12865880.jpeg",
+    "description": "Traditional Nepali milk tea brewed with aromatic spices."
+  },
+  {
+    "name": "Black Tea (Kalo Chiya)",
+    "category": "Beverage",
+    "price": 20,
+    "image": "https://images.pexels.com/photos/24407404/pexels-photo-24407404.jpeg",
+    "description": "Strong and refreshing Nepali black tea."
+  },
+  {
+    "name": "Milk Coffee",
+    "category": "Coffee",
+    "price": 100,
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+    "description": "Smooth coffee blended with warm milk."
+  },
+  {
+    "name": "Cappuccino",
+    "category": "Coffee",
+    "price": 250,
+    "image": "https://images.pexels.com/photos/2725969/pexels-photo-2725969.jpeg",
+    "description": "Espresso topped with steamed milk and foam."
+  },
+  {
+    "name": "Momo (Veg)",
+    "category": "Food",
+    "price": 100,
+    "image": "https://images.pexels.com/photos/28445593/pexels-photo-28445593.jpeg",
+    "description": "Steamed dumplings filled with seasoned vegetables."
+  },
+  {
+    "name": "Momo (Chicken)",
+    "category": "Food",
+    "price": 150,
+    "image": "https://images.pexels.com/photos/28445591/pexels-photo-28445591.jpeg",
+    "description": "Juicy chicken momos served with spicy achar."
+  },
+  {
+    "name": "Chowmein",
+    "category": "Food",
+    "price": 100,
+    "image": "https://images.pexels.com/photos/3926121/pexels-photo-3926121.jpeg",
+    "description": "Nepali-style stir-fried noodles with vegetables."
+  },
+  {
+    "name": "Aloo Chop",
+    "category": "Snack",
+    "price": 15,
+    "image": "https://images.pexels.com/photos/31109618/pexels-photo-31109618.jpeg",
+    "description": "Crispy fried potato snack with spices."
+  },
+  {
+    "name": "Sel Roti",
+    "category": "Snack",
+    "price": 20,
+    "image": "https://images.pexels.com/photos/5553391/pexels-photo-5553391.jpeg",
+    "description": "Traditional Nepali homemade rice bread."
+  },
+  {
+    "name": "Chocolate Cake",
+    "category": "Dessert",
+    "price": 800,
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+    "description": "Soft chocolate cake with rich cocoa flavor."
+  }
+]

@@ -1,0 +1,332 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  background-color: #0f172a;
+}
+
+/* Navbar */
+.navbar {
+  background-color: transparent;
+}
+.navbar.scrolled {
+  background-color: #0f172a;
+}
+.navbar-brand {
+  font-size: 30px;
+}
+
+/* Default nav link */
+.navbar .nav-link {
+  color: #e5e7eb;
+  font-weight: 500;
+  margin: 0 6px;
+  transition: color 0.3s ease;
+}
+
+/* Hover + Active link */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #f59e0b;
+}
+.navbar .nav-link.active {
+  font-weight: 700;
+}
+@media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+  }
+
+  .navbar-collapse {
+    background-color: #0f172a;
+    padding: 20px;
+  }
+}
+
+/* Hero Section */
+
+.hero {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(11, 13, 28, 0.941), rgba(12, 12, 35, 0.864)),
+    url("https://images.unsplash.com/photo-1558030089-02acba3c214e?q=80&w=1331&auto=format&fit=crop");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 100px;
+}
+
+/* Hero Image */
+.hero-img {
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: #f59e0b;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #d97706;
+}
+/* .active{
+    color: #f59e0b;
+} */
+
+/* Menu Page  */
+.menu-card {
+  background: #0b1320;
+  /* border: none; */
+  height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+}
+
+.menu-card img {
+  height: 220px;
+  object-fit: cover;
+}
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card-body {
+  background-color: #0f172a;
+  color: white;
+}
+.card-body strong {
+  color: #f59e0b;
+  font-size: 20px;
+}
+
+/* Gallery */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+.image-close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.image-close:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal-image {
+  max-width: 100%;
+  max-height: 100vh;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+
+/* About Page */
+/* About hero image */
+.about-hero {
+  min-height: 70vh;
+  margin-top: -20px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(rgba(11, 13, 28, 0.941), rgba(12, 12, 35, 0.864)),
+    url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5")
+      center/cover no-repeat;
+}
+
+/* Tagline */
+.about-tagline {
+  max-width: 600px;
+  margin: 10px auto 0;
+  opacity: 0.9;
+}
+/* About cards */
+.about-card {
+  background: #061629;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  height: 100%;
+  transition: ease(00.3s);
+}
+.about-card:hover {
+  box-shadow: 0px 0px 6px white;
+}
+
+.about-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  /* box-shadow: 0px 0px 8px white; */
+}
+
+.about-card h5 {
+  color: #f59e0b;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Mission strip */
+.about-mission {
+  padding: 50px 0;
+  background: #0b1320;
+  font-size: 18px;
+}
+
+/* Contact section spacing */
+.contact-section {
+  background: transparent;
+}
+
+/* Left side enhancements */
+.contact-left {
+  padding-right: 30px;
+}
+
+.contact-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Soft divider */
+.contact-divider {
+  width: 40px;
+  height: 2px;
+  background: #f59e0b;
+  margin: 24px 0;
+}
+
+/* Note text */
+.contact-note {
+  font-size: 14px;
+  opacity: 0.7;
+  max-width: 280px;
+}
+
+/* Minimal form */
+.minimal-form .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #374151;
+  border-radius: 0;
+  color: #fff;
+  padding: 12px 4px;
+}
+
+.minimal-form .form-control:focus {
+  box-shadow: none;
+  border-color: #f59e0b;
+}
+
+.minimal-form .form-control::placeholder {
+  color: #9ca3af;
+}
+
+/* Make select look like minimal input */
+.people-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* remove default arrow */
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #374151;
+  color: #fff;
+
+  padding: 12px 36px 12px 4px;
+  cursor: pointer;
+}
+
+/* Focus state */
+.people-select:focus {
+  outline: none;
+  border-bottom-color: #f59e0b;
+}
+
+/* Placeholder color */
+.people-select option[disabled] {
+  background-color: #0b1320;
+}
+.people-select option {
+  background-color: #0b1320;
+  border-radius: 10px;
+}
+.people-select::-ms-expand {
+  display: none;
+}
+/* Change calendar & time icon color */
+input[type="date"],
+input[type="time"] {
+  color-scheme: dark;
+}
+
+/* Popover  */
+/* Popover container */
+.popover {
+  background-color: #0f172a; /* dark bg */
+  border: 1px solid #1f2933;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Popover text */
+.popover .popover-body {
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+/* Arrow color */
+.popover .popover-arrow::before,
+.popover .popover-arrow::after {
+  border-bottom-color: #0f172a !important;
+  border-top-color: #0f172a !important;
+}
+
+/* LOGO  */
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+}

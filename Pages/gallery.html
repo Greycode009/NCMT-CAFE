@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/cHzQBTkK/NCMT-(2).png"
+      type="image/png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <img
+            class="logo"
+            src="https://i.postimg.cc/cHzQBTkK/NCMT-(2).png"
+            alt=""
+          />
+          <span class="text-warning">NCMT CAFE</span>
+        </a>
+
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">RESERVATION</a>
+            </li>
+          </ul>
+
+          <a href="contact.html" class="btn btn-warning ms-lg-3"
+            >BOOK A TABLE</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Gallery CONTENT -->
+    <section class="py-5">
+      <div class="container mt-5">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-white">Gallery</h2>
+          <p class="text-warning">Moments, food & café vibes</p>
+        </div>
+
+        <div class="row" id="galleryContainer">
+          <!-- Gallery cards injected here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+          <button
+            type="button"
+            class="btn-close btn-close-white image-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
+          <img
+            id="modalImage"
+            src=""
+            class="img-fluid rounded"
+            alt="Gallery image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../gallery.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
