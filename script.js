@@ -1,15 +1,18 @@
-window.addEventListener("scroll", () => {
+window.addEventListener("load", () => {
   const navbar = document.querySelector(".navbar");
+  if (!navbar) return;
 
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  };
+
+  handleScroll(); // run immediately
+  window.addEventListener("scroll", handleScroll);
 });
-
-
-
 
 const currentPath =
   window.location.pathname.split("/").pop().toLowerCase() || "index.html";
@@ -24,9 +27,6 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   }
 });
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof bootstrap === "undefined") {
     console.error("Bootstrap is not loaded");
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
 
-  popovers.forEach(el => {
+  popovers.forEach((el) => {
     new bootstrap.Popover(el);
   });
 });
